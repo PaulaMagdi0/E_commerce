@@ -1,0 +1,28 @@
+.aboutMain {
+    height: auto;
+}
+.about {
+    margin: 10px;
+}
+.contentdis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+.contentdis p {
+    font-size: 20px;
+    margin: 30px 0 50px 0;
+}
+.btnOutlinedis {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.bolddis {
+    font-weight: 600;
+    font-size: 20px;
+}

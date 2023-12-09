@@ -1,0 +1,97 @@
+.accessoriesCard {
+    width: 20%;
+    flex-direction: column;
+    position: relative;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    background-color: #f4f4f4;
+    }
+    .accessoriesCard_img {
+    background: white;
+    }
+    .accessoriesCard .accessoriesCard_img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .accessoriesCard .accessoriesCard_header {
+    flex-direction: column;
+    color: #000;
+    margin: 25px 0;
+    display: flex;
+    text-align: center;
+    }
+    .accessoriesCard .accessoriesCard_header h2 {
+    font-size: 18px;
+    }
+    .accessoriesCard .accessoriesCard_header p {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 8px 0;
+    }
+    .accessoriesCard .accessoriesCard_header .price {
+    font-size: 24px;
+    color: #c9151b;
+    }
+    .accessoriesCard .accessoriesCard_header .price span {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    }
+    .accessoriesCard:hover {
+    background-color: #333333;
+    transform: scale(1);
+    cursor: pointer;
+    }
+    .accessoriesCard:hover .btn {
+    background-color: #c9151b;
+    color: #fff;
+    }
+    .accessoriesCard:hover p {
+    color: #fff;
+    }
+    .accessoriesCard:hover .accessoriesCard_header {
+    color: #fff;
+    }
+    @media (max-width: 1200px){
+        .accessoriesCard {
+            width: 25%;
+        }
+    }
+    @media (max-width: 992px){
+    .accessoriesCard {
+        width: 33%;
+    }
+    }
+    @media (max-width: 768px){
+    .accessoriesCard {
+        width: 50%;
+    }}
+    @media (max-width: 500px){
+    .accessoriesCard {
+        width: 77%;
+        margin: auto;
+    }
+    }
+    @media (max-width: 400px){
+    .accessoriesCard {
+        width: 100%;
+    }
+    }
+    @media (min-width:766px) and (max-width:992px) {
+    .accessoriesCard_header h2 ,.accessoriesCard_header p {
+        width: 230px !important;
+    }
+    }
+    @media (min-width:100px) {
+    .accessoriesCard_header h2,.accessoriesCard_header p {
+        padding: 0 10px;
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+    }

@@ -1,0 +1,44 @@
+.justify-content-center {
+    justify-content: center ;
+}
+.relative {
+    position: relative;
+}
+
+.d-contents {
+    display: contents;
+}
+
+.cat-name {
+    font-style: initial;
+    color: #000;
+    opacity: 0.5;
+    font-size: 13px;
+    margin: 0 7px;
+}
+
+select {
+    border: none;
+    width: 75%;
+    height: 40px;
+    font-size: 17px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+@media (max-width : 576px) {
+    .titlePay {
+        font-size: 1.5rem;
+    }
+    select {
+        width: 100%;
+    }
+}
+
+@media (max-width : 992px) {
+    select {
+        width: 100%;
+    }
+}

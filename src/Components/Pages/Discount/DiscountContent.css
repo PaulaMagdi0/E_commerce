@@ -1,0 +1,97 @@
+.discountCard {
+    width: 20%;
+    flex-direction: column;
+    position: relative;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    background-color: #f4f4f4;
+    }
+    .discountCard_img {
+    background: white;
+    }
+    .discountCard .discountCard_img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .discountCard .discountCard_header {
+    flex-direction: column;
+    color: #000;
+    margin: 25px 0;
+    display: flex;
+    text-align: center;
+    }
+    .discountCard .discountCard_header h2 {
+    font-size: 18px;
+    }
+    .discountCard .discountCard_header p {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 8px 0;
+    }
+    .discountCard .discountCard_header .price {
+    font-size: 24px;
+    color: #c9151b;
+    }
+    .discountCard .discountCard_header .price span {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    }
+    .discountCard:hover {
+    background-color: #333333;
+    transform: scale(1);
+    cursor: pointer;
+    }
+    .discountCard:hover .btn {
+    background-color: #c9151b;
+    color: #fff;
+    }
+    .discountCard:hover p {
+    color: #fff;
+    }
+    .discountCard:hover .discountCard_header {
+    color: #fff;
+    }
+    @media (max-width: 1200px){
+        .discountCard {
+            width: 25%;
+        }
+    }
+    @media (max-width: 992px){
+    .discountCard {
+        width: 33%;
+    }
+    }
+    @media (max-width: 768px){
+    .discountCard {
+        width: 50%;
+    }}
+    @media (max-width: 500px){
+    .discountCard {
+        width: 77%;
+        margin: auto;
+    }
+    }
+    @media (max-width: 400px){
+    .discountCard {
+        width: 100%;
+    }
+    }
+    @media (min-width:766px) and (max-width:992px) {
+    .discountCard_header h2 ,.discountCard_header p {
+        width: 230px !important;
+    }
+    }
+    @media (min-width:100px) {
+    .discountCard_header h2,.discountCard_header p {
+        padding: 0 10px;
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
+    }

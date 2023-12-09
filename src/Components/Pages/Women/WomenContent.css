@@ -1,0 +1,97 @@
+.womenCard {
+width: 20%;
+flex-direction: column;
+position: relative;
+transform: scale(0.9);
+transition: all 0.3s ease-in-out;
+margin-bottom: 40px;
+background-color: #f4f4f4;
+}
+.womenCard_img {
+background: white;
+}
+.womenCard .womenCard_img img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.womenCard .womenCard_header {
+flex-direction: column;
+color: #000;
+margin: 25px 0;
+display: flex;
+text-align: center;
+}
+.womenCard .womenCard_header h2 {
+font-size: 18px;
+}
+.womenCard .womenCard_header p {
+font-size: 14px;
+text-align: center;
+color: rgba(0, 0, 0, 0.5);
+margin: 8px 0;
+}
+.womenCard .womenCard_header .price {
+font-size: 24px;
+color: #c9151b;
+}
+.womenCard .womenCard_header .price span {
+font-size: 24px;
+display: inline-block;
+vertical-align: top;
+}
+.womenCard:hover {
+background-color: #333333;
+transform: scale(1);
+cursor: pointer;
+}
+.womenCard:hover .btn {
+background-color: #c9151b;
+color: #fff;
+}
+.womenCard:hover p {
+color: #fff;
+}
+.womenCard:hover .womenCard_header {
+color: #fff;
+}
+@media (max-width: 1200px){
+    .womenCard {
+        width: 25%;
+    }
+}
+@media (max-width: 992px){
+.womenCard {
+    width: 33%;
+}
+}
+@media (max-width: 768px){
+.womenCard {
+    width: 50%;
+}}
+@media (max-width: 500px){
+.womenCard {
+    width: 77%;
+    margin: auto;
+}
+}
+@media (max-width: 400px){
+.womenCard {
+    width: 100%;
+}
+}
+@media (min-width:766px) and (max-width:992px) {
+.womenCard_header h2 ,.womenCard_header p {
+    width: 230px !important;
+}
+}
+@media (min-width:100px) {
+.womenCard_header h2,.womenCard_header p {
+    padding: 0 10px;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+}
