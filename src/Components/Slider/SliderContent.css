@@ -1,0 +1,109 @@
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.slider {
+    display: block !important;
+}
+
+.hero-slide-item img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.banner__item {
+    flex: 0 0 18%;
+    max-width: 18%;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.banner__item img{
+    display: flex;
+    margin: auto;
+}
+
+@media (max-width: 765px){
+    .banner__item {
+        flex: 0 0 47%;
+        width: 50%;
+        max-width: 50%;
+    }
+    #hide {
+        display: none;
+    }}
+
+.banner-img {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner-img img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner__item .banner-img img:hover  {
+    transform: scale(1.05);
+    transition:all 0.5s ease 0s;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.banner__item:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-out;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+.ribbon {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.ribbon span {
+    width: 70px;
+    height: 32px;
+    top: 5px;
+    left: -14px;
+    position: absolute;
+    display: block;
+    background: #cb1515;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 34px;
+    transform: rotate(45deg);
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.cursur {
+    cursor: pointer;
+}

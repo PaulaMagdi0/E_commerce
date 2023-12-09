@@ -1,0 +1,109 @@
+$roboto:'Roboto';
+$cursive_font:'Satisfy';
+$round:'Varela Round';
+$cta:#c9151b;
+$bg:#333333;
+$text:#2d343e;
+$white:#fff;
+$black:#000;
+
+.dFlex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_content{
+    @extend .dFlex;
+    position:relative;
+    width:70%;
+    height:100%;
+    margin:50px auto;
+    padding:50px 0 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h3{
+      position:absolute;
+      left:0;
+      top:0;
+      color:$text;
+      font-size:10.5vw;       
+    }
+    .card{
+      width:30%;
+      border-radius: 15px;
+      @extend .dFlex;
+      flex-direction: column;
+      position:relative;
+      transform:scale(.8);
+      transition:all .3s ease-in-out;
+      margin-bottom:60px;
+    @media (max-width:1120px) {
+    .card {
+      width: 50%;
+    }
+      
+    }
+      .card_img{
+        img{
+          width:200px;
+        }
+      }
+      .card_header{
+        @extend .dFlex;
+        flex-direction: column;
+        color:$black;
+        margin:25px 0;
+        h2{
+          font-size:18px;
+        }
+        p{
+          font-size:14px;
+          text-align: center;
+          color:rgba($black, .5);
+          margin:8px 0;
+        }
+        .price{
+          font-size:25px;
+          color:$cta;
+          span{
+            font-size:15px;
+            display:inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    .card:hover{
+      background-color:$bg;
+      transform: scale(1);
+      cursor:pointer;
+    }
+    .card:hover{
+     .btn{
+       background-color:$cta;
+       color:$white;
+     } 
+     p {
+      color:$white;
+    }  
+     .card_header{
+      color:$white;
+    }       
+   }
+ }
+
+ .btn{
+   width:130px;
+   height:35px;
+   font-size:14px;
+   border-radius: 35px;
+   background-color:$text;
+   color:rgba($white, .5);
+   @extend .dFlex;
+   cursor:pointer;
+   position:relative;
+   transition:background-color .3s ease;
+   overflow:hidden;
+ }
